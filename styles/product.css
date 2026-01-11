@@ -1,0 +1,22 @@
+*{
+    margin: o;
+    padding: 0;
+}
+
+.hero-section{
+    background-image: url(/img/Rectangle.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 305px;
+}
+
+.hero-section p{
+font-family: Plus Jakarta Sans;
+font-weight: 500;
+font-style: Medium;
+font-size: 48px;
+color: white;
+margin-left: 125px;
+padding-top: 100px;
+}
