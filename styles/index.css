@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.header {
+  padding: 16px 24px;
+  white-space: nowrap; 
+  background-color: red;
+}
+
+
+.header > * {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+
+.logo {
+  margin-right: 150px;
+  margin-left: 100px;
+}
+
+.logo img {
+  vertical-align: middle;
+}
+
+
+.header ul {
+  list-style: none;
+}
+
+
+.header ul li {
+  display: inline-block;
+  margin-right: 16px;
+}
+
+
+.site-navigasi {
+  margin-right: 900px;
+}
+
+
+.header nav img {
+  width: 20px;
+  height: auto;
+}
+
+
+.Cta {
+  margin-left: 32px;
+}
+
+
+.header a {
+  text-decoration: none;
+  color: inherit;
+}
+
