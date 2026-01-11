@@ -12,11 +12,114 @@
 }
 
 .hero-section p{
-font-family: Plus Jakarta Sans;
-font-weight: 500;
-font-style: Medium;
-font-size: 48px;
-color: white;
-margin-left: 125px;
-padding-top: 100px;
+    font-family: Plus Jakarta Sans;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 48px;
+    color: white;
+    margin-left: 125px;
+    padding-top: 100px;
 }
+
+.promo-btn{
+    margin: 0 125px;
+
+}
+.h-promo{
+    font-family: Plus Jakarta Sans;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 48px;
+    float: left;
+}
+
+.btn{
+    float: right;
+}
+
+.promo-content{
+    padding-top: 50px;
+    clear: both;
+}
+
+.h-promo > span{
+    color: #8E6447;
+}
+
+.btn ul {
+  margin: 0;
+  padding: 0;
+}
+
+.btn li {
+  display: inline-block;
+  list-style: none;
+}
+
+.promo-btn{
+    padding-top: 50px;
+}
+
+
+.cupon-cart{
+    display: inline-block;
+    width: 420px;
+    background: #88B788;     
+    border-radius: 20px;
+    padding: 20px;
+    margin: 0 16px;
+    vertical-align: top;
+    font-size: 16px;
+    text-align: left;
+    min-height: 160px;
+}
+
+.cupon-cart.lk{
+    background-color: #F6C667 !important;
+}
+
+
+
+.cupon-cart:last-child{
+    margin-right: 0;
+}
+
+.promo-content{
+    margin-top: 40px;
+    text-align: center;
+    font-size: 0;
+}
+
+.cupon-cart figure{
+    display: inline-block;
+    width: 80px;
+    margin: 0;
+    vertical-align: middle;
+}
+
+.cupon-cart figure img{
+    width: 100%;
+}
+
+.cupon-content{
+    display: inline-block;
+    width: calc(100% - 100px);
+    margin-left: 16px;
+    vertical-align: middle;
+}
+
+.cupon-content h3{
+    margin: 0 0 8px;
+    font-size: 16px;
+}
+
+.cupon-content p{
+    margin: 0 0 12px;
+    font-size: 14px;
+}
+
+.cupon-content a{
+    color: #fff;
+    text-decoration: underline;
+}
+
