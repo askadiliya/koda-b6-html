@@ -400,3 +400,59 @@ input[type="email"], input {
   border: 1px solid #ddd;
   background: #fff;
 }
+
+
+.order-item {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  padding: 16px;
+  border-radius: 12px;
+  margin-bottom: 14px;
+  gap: 16px;
+}
+
+.order-item img {
+  width: 90px;
+  height: 90px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+
+.order-details {
+  display: flex;
+  gap: 40px;
+  flex: 1;
+}
+
+.order-details p {
+  font-size: 14px;
+  color: #333;
+  line-height: 1.6;
+}
+
+.order-status {
+  text-align: right;
+  min-width: 120px;
+}
+
+.status-badge {
+  display: inline-block;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 12px;
+  margin-bottom: 6px;
+}
+
+.status-progress {
+  background: #ffe5b4;
+  color: #ff9800;
+}
+
+.order-status a {
+  font-size: 13px;
+  color: #ff9800;
+  text-decoration: none;
+}
+
