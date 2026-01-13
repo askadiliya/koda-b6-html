@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="product detail page showing price, choice of coffee types and recommendations">
-    <link rel="stylesheet" href="/styles/index.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="product detail page showing price, choice of coffee types and recommendations"
+    />
+    <link rel="stylesheet" href="/styles/index.css" />
     <title>Detail Product</title>
-</head>
-<body>
+  </head>
+  <body>
     <header class="header">
       <div class="logo">
         <img src="/img/Frame.png" alt="" />
@@ -52,5 +55,82 @@
         </ul>
       </div>
     </header>
-</body>
+
+    <main class="container">
+      <section class="detail">
+        <div class="detail-img">
+          <img src="https://placehold.co/400x400" class="main-img" />
+
+          <div class="thumb-row">
+            <img src="https://placehold.co/100x100" />
+            <img src="https://placehold.co/100x100" />
+            <img src="https://placehold.co/100x100" />
+            <img src="https://placehold.co/100x100" />
+          </div>
+        </div>
+
+        <div class="detail-info">
+          <span class="badge">FLASH SALE</span>
+
+          <h1>Hazelnut Latte</h1>
+          <div class="meta">
+            <span class="rating">⭐⭐⭐⭐⭐</span>
+            <span class="review">(200 Review)</span>
+            <span class="rec">• Recommendation</span>
+          </div>
+          <p class="price">IDR 10.000</p>
+          <p class="desc">
+            Cold brewing is a method of brewing coffee using cold water over a
+            long period.
+          </p>
+
+          <p class="label">Choose Size</p>
+          <div class="size">
+            <button class="active">Regular</button>
+            <button>Medium</button>
+            <button>Large</button>
+          </div>
+
+          <p class="label">Hot/Ice ?</p>
+          <div class="size">
+            <button class="active">Regular</button>
+            <button>Medium</button>
+            <button>Large</button>
+          </div>
+
+          <div class="action">
+            <button class="buy">Buy</button>
+            <button class="cart">Add to cart</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="recommend">
+        <h3>Recommendation For You</h3>
+
+        <div class="recommend-row">
+          <div class="rec-card">
+            <img src="img/rec1.jpg" />
+            <span class="badge">FLASH SALE</span>
+            <h4>Hazelnut Latte</h4>
+            <p>IDR 10.000</p>
+          </div>
+
+          <div class="rec-card">
+            <img src="img/rec2.jpg" />
+            <span class="badge">FLASH SALE</span>
+            <h4>Hazelnut Latte</h4>
+            <p>IDR 10.000</p>
+          </div>
+
+          <div class="rec-card">
+            <img src="img/rec3.jpg" />
+            <span class="badge">FLASH SALE</span>
+            <h4>Hazelnut Latte</h4>
+            <p>IDR 10.000</p>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>
