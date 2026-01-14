@@ -183,20 +183,118 @@ button:hover {
   background-color: #f5f5f5;
 }
 
-/* RESPONSIVE */
-@media (max-width: 768px) {
-  .container-login {
-    flex-direction: column;
-  }
 
-  .coffee-image {
-    height: 250px;
-  }
-
-  .registration-form {
-    padding: 30px;
-  }
+/* home */
+.hero-section {
+    display: flex;
+    height: 600px;
 }
+
+.hero-left {
+    background-color: #0B0909;
+    color: #FFFFFF;
+    flex: 1;
+    padding: 100px 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero-left h1 {
+    font-size: 48px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.hero-left p {
+    font-size: 16px;
+    color: #A0A0A0;
+    margin-bottom: 30px;
+    max-width: 400px;
+}
+
+.get-started-btn {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: var(--background-dark) !important;
+    padding: 12px 24px;
+    border-radius: 30px;
+    font-weight: bold;
+    width: fit-content;
+    margin-bottom: 60px;
+}
+
+.stats-container {
+    display: flex;
+    gap: 40px;
+}
+
+.stat-item span {
+    font-size: 32px;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.stat-item p {
+    font-size: 14px;
+    color: var(--text-light);
+    margin-top: 5px;
+}
+
+
+/* Section 2: Features Section */
+.features-section {
+    display: flex;
+    height: 400px; /* Approximate height */
+}
+
+.features-left {
+    flex: 1;
+    background-color: var(--text-light);
+    padding: 80px 150px;
+}
+
+.features-left h2 {
+    font-size: 32px;
+    color: var(--text-dark);
+    margin-bottom: 20px;
+}
+
+.features-left h2 span {
+    color: var(--primary-color);
+}
+
+.features-left p {
+    color: var(--text-dark);
+    margin-bottom: 30px;
+    max-width: 450px;
+}
+
+.feature-list {
+    list-style-type: none;
+}
+
+.feature-list li {
+    padding-left: 25px;
+    margin-bottom: 15px;
+    color: var(--text-dark);
+    background-size: 16px;
+}
+
+
+
+.footer-branding {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: var(--background-dark);
+    color: var(--text-light);
+    padding: 10px 20px;
+    font-size: 12px;
+    opacity: 0.8;
+}
+
+
 
 
 /* detail product */
