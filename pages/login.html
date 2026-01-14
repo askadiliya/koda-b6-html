@@ -4,9 +4,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Halaman login">
+    <link rel="stylesheet" href="/styles/index.css">
     <title>Login</title>
 </head>
 <body>
-    
+    <main class="container-login">
+        <div class="coffee-image">
+            <img src="/img/login.png" alt="Coffee Grinds">
+        </div>
+
+        <form class="registration-form">
+            <div class="logo-container">
+                <img src="/img/Logo2.png" alt="Logo" class="main-logo">
+                <img src="/img/Frame.png" alt="Coffee Shop Logo" class="secondary-logo">
+            </div>
+
+            <h2>Login</h2>
+            <span>Fill out the form correctly</span>
+
+            <div class="input-container">
+                <label for="email">Email:</label>
+                <div class="input-wrapper">
+                    <input type="email" id="email" name="email" placeholder="Enter Your Email" required>
+                    <img src="" alt="Email Icon" class="input-icon">
+                </div>
+            </div>
+
+            <div class="input-container">
+                <label for="password">Password:</label>
+                <div class="input-wrapper">
+                    <input type="password" id="password" name="password" placeholder="Enter Your Password" required>
+                    <img src="" alt="Password Icon" class="input-icon">
+                </div>
+            </div>
+
+            <div class="password-recovery">
+                <a class="forgot-password" style="text-decoration: none;" href="forgot-password.html">Lupa password? </a>
+            </div>
+
+            <button type="submit">Login</button>
+            <span class="login-ref">Not Have an Account? <a style="text-decoration: none; color:orange" href="register.html">Register</a></span>
+
+            <div class="social-media">
+                <div class="social-button">
+                    <img src="" alt="Facebook Icon">
+                    Facebook
+                </div>
+                <div class="social-button">
+                    <img src="" alt="Google Icon">
+                    Google
+                </div>
+            </div>
+        </form>
+    </main>
 </body>
 </html>
