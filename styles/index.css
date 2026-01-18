@@ -4,14 +4,23 @@
   box-sizing: border-box;
 }
 
+
+.error-message {
+  color: red;
+  font-size: 14px;
+  margin-top: 8px;
+}
+
 .header {
-  background-color: #000000; 
+  background-color: transparent; 
   color: white;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   height: 64px;
   gap: 15px;
+  position: fixed;
+  width: 100%;
 }
 
 .logo {
@@ -71,6 +80,7 @@
   height: 100%;
   object-fit: cover;
 }
+
 
 .registration-form {
   flex: 1;
@@ -141,7 +151,7 @@
 
 .forgot-password {
   font-size: 14px;
-  color: #c27b3a;
+  color:#FF8906;
 }
 
 button {
@@ -162,6 +172,8 @@ button:hover {
 .login-ref {
   font-size: 14px;
   margin-bottom: 25px;
+  text-align: center;
+  color: #FF8906;
 }
 
 .social-media {
@@ -173,10 +185,18 @@ button:hover {
   flex: 1;
   border: 1px solid #ccc;
   padding: 12px;
-  text-align: center;
   border-radius: 8px;
   cursor: pointer;
   font-weight: 600;
+  display: flex;              
+  justify-content: center;   
+  align-items: center;  
+}
+
+
+.btn-grup img {
+  width: 20px;       
+  height: 20px;
 }
 
 .social-button:hover {
@@ -245,7 +265,7 @@ button:hover {
 /* Section 2: Features Section */
 .features-section {
     display: flex;
-    height: 400px; /* Approximate height */
+    height: 400px;
 }
 
 .features-left {
@@ -294,6 +314,670 @@ button:hover {
     opacity: 0.8;
 }
 
+/* sectio menu */
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container-header {
+  background-color: #0b090921;
+  padding: 14px 130px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 20;
+}
+
+div.logo {
+  display: inline-block;
+}
+
+.logo img,
+.logo span {
+  vertical-align: middle;
+}
+
+.logo .logo-text {
+  font-family: "Sacramento", cursive;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 400;
+  margin-left: 15px;
+}
+
+nav.nav-container-left {
+  display: inline-block;
+}
+ul .list {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+a.nav-a {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.line {
+  margin: 0 60px 0 68px;
+  border-bottom: 1px solid #ff8906;
+  padding-bottom: 5px;
+}
+
+.nav-container-right {
+  float: right;
+}
+
+a.signin,
+a.signup {
+  text-decoration: none;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  padding: 12px;
+  border-radius: 5px;
+}
+
+a.signup {
+  background-color: #ff8906;
+  color: #0b132a;
+}
+
+a.signin {
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  margin: 0 22px;
+}
+
+img.cart-icon {
+  margin-left: 22px;
+}
+
+/**/
+
+.background-cover {
+  width: 50%;
+  background: linear-gradient(to bottom, #777c82, #0b0909);
+  height: 1024px;
+  float: left;
+  padding: 283px 80px 0 132px;
+  overflow: hidden;
+}
+
+.expresso-container {
+  width: 50%;
+  float: left;
+  height: 1024px;
+  overflow: hidden;
+}
+
+h1.hero-title {
+  color: #ffffff;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 500;
+  font-size: 48px;
+}
+
+p.hero-paragraph {
+  color: #ffffff;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  margin: 25px 0;
+}
+
+div.get {
+  padding: 15px 32px;
+  background-color: #ff8906;
+  border-radius: 6px;
+  display: inline-block;
+}
+a.get-started {
+  text-decoration: none;
+  color: #0b132a;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.start-content {
+  display: inline-block;
+  margin-top: 25px;
+  border-right: 1px solid #ffffff;
+  width: 110px;
+  margin-right: 35px;
+}
+
+span.start-number {
+  display: block;
+  color: #ff8906;
+  font-size: 48px;
+  font-weight: 500;
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+span.start-text {
+  color: #ffffff;
+  font-weight: 400;
+  font-family: 16px;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  margin-top: 12px;
+}
+
+.start-content.start-right {
+  width: auto;
+  border-right: none;
+  margin-right: auto;
+}
+
+.provide-barista {
+  width: 100%;
+  position: relative;
+}
+section.content-left {
+  width: 50%;
+  float: left;
+  padding: 54px 71px 0 130px;
+}
+
+h2.we {
+  color: #0b132a;
+  font-size: 48px;
+  font-weight: 500;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  margin-bottom: 25px;
+}
+
+span.we-provide {
+  color: #8e6447;
+}
+
+p.content-left-text {
+  color: #4f5665;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+li.benefit-list {
+  color: #4f5665;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Rubik", sans-serif;
+  list-style-type: none;
+  vertical-align: middle;
+  margin-top: 25px;
+}
+img.img-benefit {
+  vertical-align: middle;
+}
+
+section.content-right {
+  width: 50%;
+  float: right;
+  overflow: hidden;
+}
+
+/*--container favorite--*/
+
+section.container-favorite {
+  text-align: center;
+  width: 100%;
+  position: relative;
+  padding-top: 80px;
+  margin-bottom: 84px;
+  clear: both;
+}
+
+h2.text-favorite {
+  color: #0b132a;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 500;
+  font-size: 48px;
+}
+
+.text-favorite > span {
+  color: #8e6447;
+}
+
+.favorite-line {
+  width: 68px;
+  height: 7px;
+  background-color: #ff8906;
+  text-align: center;
+  margin: 25px auto;
+}
+
+p.favorite-paragraph {
+  font-weight: 400;
+  font-size: 16px;
+  color: #4f5665;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  margin-bottom: 60px;
+}
+
+article.menu {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+header.header-menu {
+  display: inline-block;
+  position: relative;
+}
+
+div.title-menu {
+  position: relative;
+  z-index: 2;
+  margin-top: -20px;
+  margin-left: 9px;
+  width: 262px;
+  padding: 10px 10px 25px 10px;
+  background-color: #ffffff;
+}
+
+h3.title-menu-title {
+  font-size: 22px;
+  font-weight: 500;
+  color: #0b132a;
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+p.title-menu-text {
+  font-weight: 400;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  color: #4f5665;
+  font-size: 14px;
+  margin: 12px 0;
+}
+
+span.menu-price {
+  font-weight: 500;
+  font-size: 22px;
+  color: #ff8906;
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.menu-footer {
+  margin-top: 12px;
+  display: flex;
+}
+
+button.menu-button {
+  padding: 7.5px 70.5px;
+  border-radius: 6px;
+  background-color: #ff8906;
+  border: none;
+  margin-right: 7px;
+  cursor: pointer;
+}
+
+.menu-footer a {
+  text-decoration: none;
+
+}
+
+.menu-button {
+  background-color: aliceblue;
+}
+
+
+.icon-cart-shopping img {
+  vertical-align: middle;
+}
+
+/*--location map--*/
+section.location {
+  text-align: center;
+  background-color: #e8e8e84d;
+  padding: 46px 0 97px 0;
+}
+
+h3.location-title {
+  color: #0b132a;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 500;
+  font-size: 48px;
+}
+
+.location-title span {
+  color: #8e6447;
+}
+
+div.location-line {
+  width: 68px;
+  height: 7px;
+  background-color: #ff8906;
+  text-align: center;
+  margin: 25px auto;
+}
+
+p.location-text {
+  color: #4f5665;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  margin-bottom: 60px;
+}
+
+/*--testimonial--*/
+
+section.testimonial {
+  width: 100%;
+  height: 600px;
+  background: linear-gradient(to bottom right, #777c82, #0b0909);
+  padding: 75px 0 75px 100px;
+  display: block;
+  margin-bottom: 70px;
+}
+
+figure.testimonial-man {
+  display: inline-block;
+}
+
+article.testimonial-article {
+  display: inline-block;
+  width: 490px;
+  margin-left: 20px;
+  vertical-align: top;
+}
+
+.testimonial-label {
+  font-size: 16px;
+  font-weight: 400;
+  color: #ffffff;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  margin-bottom: 25px;
+}
+
+.customer-name {
+  font-size: 48px;
+  font-weight: 500;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  margin: 25px 0;
+  color: #ffffff;
+  border-left: 7px solid #ff8906;
+  padding-left: 20px;
+}
+
+.customer-role {
+  color: #ff8906;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.testimonial-text {
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  color: #ffffff;
+  margin: 25px 0;
+}
+
+.rating {
+  margin-bottom: 25px;
+}
+
+.start {
+  color: #ff8c00;
+  margin-right: 25px;
+}
+
+.rating-number {
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.navigation {
+  margin-bottom: 25px;
+}
+
+img.arrow-left {
+  background-color: #ffffff;
+  padding: 15px;
+  border-radius: 100%;
+  margin-right: 9px;
+  cursor: pointer;
+}
+
+img.arrow-right {
+  background-color: #ff8906;
+  padding: 15px;
+  border-radius: 100%;
+  cursor: pointer;
+}
+
+/*--section-chat--*/
+.sticky {
+  position: fixed;
+  bottom: 60px;
+  right: 60px;
+  z-index: 15;
+  background-color: #ff8906;
+  border-radius: 100%;
+  padding: 12px;
+  cursor: pointer;
+}
+
+.sticky img {
+  width: 50px;
+  height: 50px;
+}
+
+#chat-toggle {
+  display: none;
+}
+
+.chat-float-button {
+  position: fixed;
+  bottom: 60px;
+  right: 60px;
+  cursor: pointer;
+  z-index: 20;
+  border-radius: 100%;
+}
+
+.chat-container {
+  width: 350px;
+  position: fixed;
+  bottom: 150px;
+  right: 60px;
+  background: white;
+  border-radius: 15px;
+  display: none;
+  z-index: 10;
+}
+
+#chat-toggle:checked ~ .chat-container {
+  display: block;
+}
+
+.chat-header {
+  background: #ff8906;
+  padding: 20px;
+  text-align: center;
+  color: white;
+  border-radius: 15px 15px 0 0;
+}
+
+.chat-header h1 {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.chat-header p {
+  font-size: 14px;
+}
+
+.chat-body {
+  padding: 20px;
+  height: 225px;
+  background: white;
+}
+
+.message {
+  margin-bottom: 15px;
+}
+
+.message-content {
+  background: white;
+  padding: 12px 15px;
+  border-radius: 10px;
+  width: 70%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.message-content p {
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.message-user .message-content {
+  background: #e8e8e8;
+  margin-left: 30%;
+}
+
+.chat-input {
+  padding: 15px;
+  background: white;
+  border-radius: 0 0 15px 15px;
+  border-top: 1px solid #e0e0e0;
+}
+
+.input-wrapper {
+  position: relative;
+}
+
+.chat-input input {
+  width: 100%;
+  padding: 12px 50px 12px 15px;
+  border: 2px solid #ddd;
+  border-radius: 25px;
+  font-size: 14px;
+}
+
+.send-button {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  width: 40px;
+  height: 40px;
+  background: #ff8906;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  padding: 8px;
+}
+
+.send-button img {
+  width: 100%;
+  height: 100%;
+}
+
+/*--footer--*/
+
+.footer.footer {
+  background-color: #f8f8f8;
+  margin-top: 32px;
+}
+.coffee-logo {
+  width: 340px;
+  margin-left: 110px;
+  display: inline-block;
+  margin-right: 60px;
+  vertical-align: middle;
+}
+
+.nav-logo {
+  text-decoration: none;
+}
+
+.logo-text-coffe {
+  font-family: "Sacramento", cursive;
+  color: #8e6447;
+  font-size: 20px;
+  font-weight: 400;
+  margin-left: 15px;
+}
+
+p.coffe-text {
+  color: #4f5665;
+  font-weight: 400;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 16px;
+  margin-top: 23px;
+  margin-bottom: 32px;
+}
+
+p.copy-coffe {
+  color: #afb5c0;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Rubik", sans-serif;
+  margin-bottom: 67.5px;
+}
+
+nav.footer-nav {
+  display: inline-block;
+  margin-right: 106px;
+  margin-top: 50px;
+}
+
+h3.footer-heading {
+  color: #0b132a;
+  font-weight: 500;
+  font-size: 16px;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  margin-bottom: 20px;
+}
+
+.footer-link {
+  list-style-type: none;
+}
+
+.footer-link li {
+  margin-bottom: 10px;
+}
+
+.footer-link li a {
+  text-decoration: none;
+  color: #4f5665;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+section.sosial-media {
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 50px;
+}
+
+h3.sosial-media-text {
+  color: #0b132a;
+  font-weight: 500;
+  font-size: 18px;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  margin-bottom: 26px;
+}
+
+.border {
+  border: 1px solid black;
+}
+
+.sosial-media-image {
+  margin: 0 20px;
+}
 
 
 
