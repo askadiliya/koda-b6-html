@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Halaman register" />
+    <link rel="stylesheet" href="/styles/index.css" />
+    <title>Register</title>
+  </head>
+  <body>
+    <main class="container-login">
+      <div class="coffee-image">
+        <img src="/img/login.png" alt="Coffee Grinds" />
+      </div>
+
+      <form class="registration-form" id="registerForm">
+        <div class="logo-container">
+          <img src="/img/Logo2.png" alt="Logo" class="main-logo" />
+          <img
+            src="/img/Frame.png"
+            alt="Coffee Shop Logo"
+            class="secondary-logo"
+          />
+        </div>
+
+        <header class="public-header">
+          <img src="/img/secon-Frame.png" alt="" />
+          <img src="/img/secone-Logo.png" alt="" />
+        </header>
+
+        <h2>Register</h2>
+        <span>Fill out the form correctly</span>
+
+        <div class="input-container">
+          <label for="fullname">Full Name:</label>
+          <div class="input-wrapper">
+            <input
+              type="text"
+              id="fullname"
+              name="fullname"
+              placeholder="Enter Your Full Name"
+              required
+            />
+            <img src="" alt="User Icon" class="input-icon" />
+          </div>
+        </div>
+
+        <div class="input-container">
+          <label for="email">Email:</label>
+          <div class="input-wrapper">
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Enter Your Email"
+              required
+            />
+            <img src="" alt="Email Icon" class="input-icon" />
+          </div>
+        </div>
+
+        <div class="input-container">
+          <label for="password">Password:</label>
+          <div class="input-wrapper">
+            <input
+              type="password"
+              id="password"
+              name="password"
+              placeholder="Enter Your Password"
+              required
+            />
+            <img src="" alt="Password Icon" class="input-icon" />
+          </div>
+        </div>
+
+        <div class="input-container">
+          <label for="confirmPassword">Confirm Password:</label>
+          <div class="input-wrapper">
+            <input
+              type="password"
+              id="confirmPassword"
+              name="confirmPassword"
+              placeholder="Confirm Your Password"
+              required
+            />
+            <img src="" alt="Password Icon" class="input-icon" />
+          </div>
+        </div>
+
+        <p id="error-message" class="error-message"></p>
+
+        <button type="submit">Register</button>
+
+        <span class="login-ref">
+          Already have an account?
+          <a style="text-decoration: none; color: orange" href="/pages/login.html">
+            Login
+          </a>
+        </span>
+
+        <div class="social-media">
+          <div class="social-button">
+            <div class="btn-grup">
+              <img src="/img/fb.png" alt="Facebook Icon" />
+              <span>Facebook</span>
+            </div>
+          </div>
+          <div class="social-button">
+            <div class="btn-grup">
+              <img src="/img/google.png" alt="Google Icon" />
+              <span>Google</span>
+            </div>
+          </div>
+        </div>
+      </form>
+    </main>
+
+    <script>
+      const form = document.getElementById("registerForm");
+      const errorMessage = document.getElementById("error-message");
+
+      form.addEventListener("submit", function (e) {
+        e.preventDefault();
+
+        const password = document.getElementById("password").value;
+        const confirmPassword =
+          document.getElementById("confirmPassword").value;
+
+        if (password !== confirmPassword) {
+          errorMessage.textContent = "Password dan Confirm Password tidak sama";
+          return;
+        }
+
+        alert("Registrasi berhasil!");
+        window.location.href = "login.html";
+      });
+    </script>
+  </body>
+</html>
