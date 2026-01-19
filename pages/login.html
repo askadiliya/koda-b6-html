@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -23,8 +23,8 @@
           />
         </div>
         <header class="public-header">
-          <img src="/img/secon-Frame.png" alt="">
-          <img src="/img/secone-Logo.png" alt="">
+          <img src="/img/secon-Frame.png" alt="" />
+          <img src="/img/secone-Logo.png" alt="" />
         </header>
         <h2>Login</h2>
         <span>Fill out the form correctly</span>
@@ -70,7 +70,9 @@
         <button type="submit">Login</button>
         <span class="login-ref"
           >Not Have an Account?
-          <a style="text-decoration: none; color: orange" href="/pages/signUp.html"
+          <a
+            style="text-decoration: none; color: orange"
+            href="/pages/signUp.html"
             >Register</a
           ></span
         >
@@ -93,11 +95,6 @@
     </main>
 
     <script>
-      const user = {
-        email: "koda@mail.com",
-        password: "1234",
-      };
-
       const form = document.getElementById("loginForm");
       const errorMessage = document.getElementById("error-message");
 
@@ -107,10 +104,17 @@
         const emailInput = document.getElementById("email").value;
         const passwordInput = document.getElementById("password").value;
 
-        if (emailInput === user.email && passwordInput === user.password) {
+        const users = JSON.parse(localStorage.getItem("users")) || [];
+
+        const user = users.find(
+          (u) => u.email === emailInput && u.password === passwordInput,
+        );
+
+        if (user) {
+          alert(`Login berhasil! Selamat datang, ${user.fullname}`);
           window.location.href = "../index.html";
         } else {
-          errorMessage.textContent = "Username / Password salah";
+          errorMessage.textContent = "Email atau Password salah";
         }
       });
     </script>
