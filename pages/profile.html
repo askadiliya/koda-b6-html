@@ -1,48 +1,80 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="halaman Profile">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="halaman Profile" />
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Profile</title>
-</head>
-<body>
-    <header class="bg-[#0b0909] text-white flex justify-evenly items-center h-16 gap-4 sticky top-0 z-50">
-  <!-- Logo -->
-  <div class="flex items-center gap-2 pl-[150px]">
-    <img src="/img/Frame.png" alt="Logo Icon" class="h-6" />
-    <span>
-      <img src="/img/Logo.png" alt="Coffee Shop Logo Text" class="h-6" />
-    </span>
-  </div>
+  </head>
+  <body>
+    <header
+      class="bg-[#0b0909] text-white flex justify-evenly items-center h-16 gap-4 sticky top-0 z-50"
+    >
+      <div class="flex items-center gap-2 pl-[150px]">
+        <img src="/img/Frame.png" alt="Logo Icon" class="h-6" />
+        <span>
+          <img src="/img/Logo.png" alt="Coffee Shop Logo Text" class="h-6" />
+        </span>
+      </div>
 
-  <!-- Navigation utama -->
-  <nav class="flex-grow ml-12">
-    <ul class="flex gap-4 list-none">
-      <li><a href="#" class="text-white hover:text-gray-300">Home</a></li>
-      <li><a href="#" class="text-white hover:text-gray-300">Product</a></li>
-    </ul>
-  </nav>
+      <nav class="flex-grow ml-12">
+        <ul class="flex gap-4 list-none">
+          <li><a href="#" class="text-white hover:text-gray-300">Home</a></li>
+          <li>
+            <a href="#" class="text-white hover:text-gray-300">Product</a>
+          </li>
+        </ul>
+      </nav>
 
-  <!-- Ikon navigasi -->
-  <nav>
-    <ul class="flex gap-4 list-none">
-      <li>
-        <a href="#"><img src="/img/Search.png" alt="Search Icon" class="w-5 h-auto" /></a>
-      </li>
-      <li>
-        <a href="#"><img src="/img/ShoppingCart.png" alt="Shopping Cart Icon" class="w-5 h-auto" /></a>
-      </li>
-    </ul>
-  </nav>
+      <nav>
+        <ul class="flex gap-4 list-none">
+          <li>
+            <a href="#"
+              ><img src="/img/Search.png" alt="Search Icon" class="w-5 h-auto"
+            /></a>
+          </li>
+          <li>
+            <a href="#"
+              ><img
+                src="/img/ShoppingCart.png"
+                alt="Shopping Cart Icon"
+                class="w-5 h-auto"
+            /></a>
+          </li>
+        </ul>
+      </nav>
 
-  <!-- Call to action -->
-  <div class="flex items-center gap-4 pr-[150px]">
-    <a href="/pages/login.html" class="text-white hover:text-gray-300">Sign In</a>
-    <a href="/pages/signUp.html" class="text-white hover:text-gray-300">Sign Up</a>
-  </div>
-</header>
+      <div class="flex items-center gap-4 pr-[150px]">
+        <a href="/pages/login.html" class="text-white hover:text-gray-300"
+          >Sign In</a
+        >
+        <a href="/pages/signUp.html" class="text-white hover:text-gray-300"
+          >Sign Up</a
+        >
+      </div>
+    </header>
 
-</body>
+    <main class="flex-1 py-10 px-[150px]">
+        <h1 class="text-3xl font-normal mb-6">Profile</h1>
+
+        <div class="flex gap-8 items-start">
+            <aside class="bg-white p-6 rounded-lg shadow-md w-72 flex-shrink-0">
+                <div class="profile-info text-center">
+                    <h2 class="text-lg font-semibold">Aska Diliyan Perkasa</h2>
+                    <p class="text-gray-500 text-sm">askadiliyan@gmail.com</p>
+                    <img src="https://placehold.co/100x100" alt="Profile Photo" class="mx-auto rounded-full mb-4 mt-4">
+                </div>
+                <div class="flex flex-col gap-4 mt-6">
+                    <button class="w-full bg-coffee-orange text-white py-2 rounded bg-orange-500">Upload New Photo</button>
+                    <div class="text-gray-500 text-xs text-center">
+                        Since 20 January 2022
+                    </div>
+                </div>
+            </aside>
+
+            
+        </div>
+    </main>
+  </body>
 </html>
