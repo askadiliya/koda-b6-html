@@ -523,25 +523,25 @@ section.content-right {
 
 /*--container favorite--*/
 
-section.container-favorite {
+section.container-favorite, .visit-store {
   text-align: center;
   width: 100%;
   padding-top: 64px;
   clear: both;
 }
 
-.container-favorite > h2{
+.container-favorite, .visit-store > h2{
   color: #0b132a;
   font-family: "Plus Jakarta Sans", sans-serif;
   font-weight: 500;
   font-size: 48px;
 }
 
-.container-favorite  span {
+.container-favorite, .visit-store span {
   color: #8e6447;
 }
 
-.favorite-line {
+.favorite-line,.visit-store > div{
   width: 68px;
   height: 7px;
   background-color: #ff8906;
@@ -549,7 +549,7 @@ section.container-favorite {
   margin: 25px auto;
 }
 
-.container-favorite > p {
+.container-favorite, .visit-store > p {
   font-weight: 400;
   font-size: 16px;
   color: #4f5665;
