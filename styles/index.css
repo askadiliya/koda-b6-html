@@ -267,8 +267,9 @@ button:hover {
 /* Section 2: Features Section */
 .features-section {
     display: flex;
-    height: 400px;
+    padding: 80px 0;
 }
+
 
 .features-left {
     flex: 1;
@@ -529,14 +530,14 @@ section.container-favorite {
   clear: both;
 }
 
-h2.text-favorite {
+.container-favorite > h2{
   color: #0b132a;
   font-family: "Plus Jakarta Sans", sans-serif;
   font-weight: 500;
   font-size: 48px;
 }
 
-.text-favorite > span {
+.container-favorite  span {
   color: #8e6447;
 }
 
@@ -548,7 +549,7 @@ h2.text-favorite {
   margin: 25px auto;
 }
 
-p.favorite-paragraph {
+.container-favorite > p {
   font-weight: 400;
   font-size: 16px;
   color: #4f5665;
