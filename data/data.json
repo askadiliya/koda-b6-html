@@ -1,0 +1,139 @@
+{
+  "flashSaleProducts": [
+    {
+      "id": 1,
+      "title": "Hazelnut Latte",
+      "description": "You can explore the menu that we provide with fun and have their own taste and make your day better.",
+      "price": 10000,
+      "oldPrice": 20000,
+      "rating": 5,
+      "image": "/img/hazzelnut.png",
+      "flashSale": true
+    },
+    {
+      "id": 2,
+      "title": "Caramel Latte",
+      "description": "Sweet caramel blended with espresso creates a perfect coffee experience.",
+      "price": 12000,
+      "oldPrice": 24000,
+      "rating": 5,
+      "image": "/img/caramel.png",
+      "flashSale": true
+    },
+    {
+      "id": 3,
+      "title": "Chocolate Latte",
+      "description": "Rich chocolate flavor combined with premium coffee beans.",
+      "price": 15000,
+      "oldPrice": 30000,
+      "rating": 4,
+      "image": "/img/chocolate.png",
+      "flashSale": true
+    },
+    {
+      "id": 4,
+      "title": "Vanilla Latte",
+      "description": "Smooth vanilla taste with creamy milk and espresso.",
+      "price": 13000,
+      "oldPrice": 26000,
+      "rating": 5,
+      "image": "/img/vanilla.png",
+      "flashSale": true
+    },
+    {
+      "id": 5,
+      "title": "Cappuccino",
+      "description": "Classic Italian cappuccino with thick foam and bold taste.",
+      "price": 14000,
+      "oldPrice": 28000,
+      "rating": 4,
+      "image": "/img/cappuccino.png",
+      "flashSale": true
+    },
+    {
+      "id": 6,
+      "title": "Americano",
+      "description": "Strong and bold coffee for real coffee lovers.",
+      "price": 9000,
+      "oldPrice": 18000,
+      "rating": 4,
+      "image": "/img/americano.png",
+      "flashSale": true
+    },
+    {
+      "id": 7,
+      "title": "Mocha Latte",
+      "description": "Combination of chocolate and espresso for a smooth taste.",
+      "price": 16000,
+      "oldPrice": 32000,
+      "rating": 5,
+      "image": "/img/mocha.png",
+      "flashSale": true
+    },
+    {
+      "id": 8,
+      "title": "Espresso",
+      "description": "Pure espresso shot with strong aroma and flavor.",
+      "price": 8000,
+      "oldPrice": 16000,
+      "rating": 4,
+      "image": "/img/espresso.png",
+      "flashSale": true
+    },
+    {
+      "id": 9,
+      "title": "Matcha Latte",
+      "description": "Premium Japanese matcha mixed with creamy milk.",
+      "price": 17000,
+      "oldPrice": 34000,
+      "rating": 5,
+      "image": "/img/matcha.png",
+      "flashSale": true
+    },
+    {
+      "id": 10,
+      "title": "Iced Coffee Milk",
+      "description": "Fresh iced coffee with milk, perfect for hot days.",
+      "price": 11000,
+      "oldPrice": 22000,
+      "rating": 4,
+      "image": "/img/iced-coffee.png",
+      "flashSale": true
+    }
+  ],
+
+  "testimonials": [
+    {
+      "id": 1,
+      "name": "Viezh Robert",
+      "role": "Manager Coffee Shop",
+      "message": "Wow... I am very happy to spend my whole day here. The Wi-Fi is good, and the coffee and meals tho. I like it here!! Very recommended!",
+      "rating": 5,
+      "image": "/img/testimonial-1.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Yessica Christy",
+      "role": "Food Blogger",
+      "message": "The coffee tastes amazing and the ambience is very cozy. Perfect place to work and chill at the same time.",
+      "rating": 5,
+      "image": "/img/testimonial-2.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Kim Young Jou",
+      "role": "Coffee Enthusiast",
+      "message": "I love the variety of coffee here. The staff is friendly and the service is fast.",
+      "rating": 4,
+      "image": "/img/testimonial-3.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Muhammad Rizki",
+      "role": "Freelancer",
+      "message": "Great place for remote working. Stable internet and delicious coffee.",
+      "rating": 5,
+      "image": "/img/testimonial-4.jpg"
+    }
+  ]
+}
