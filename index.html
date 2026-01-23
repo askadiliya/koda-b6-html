@@ -282,46 +282,44 @@
       </section>
     </section>
     <script>
-      const favoriteList = document.getElementById("favorite-list");
+    const favoriteList = document.getElementById("favorite-list");
 
-      async function fetchData() {
-        const res = await fetch(
-          "https://raw.githubusercontent.com/askadiliya/koda-b6-html/refs/heads/main/data/data.json",
-        );
-        const data = await res.json();
-        const menus = data.flashSaleProducts.slice(0, 5);
-        renderMenus(menus);
-      }
+    async function fetchData() {
+      const res = await fetch(
+        "https://raw.githubusercontent.com/askadiliya/koda-b6-html/refs/heads/main/data/data.json"
+      );
+      const data = await res.json();
+      const menus = data.flashSaleProducts.slice(0, 5);
+      renderMenus(menus);
+    }
 
-      function renderMenus(menus) {
-        menus.forEach((menu) => {
-          const article = document.createElement("article");
-          article.className = "menu";
+    function renderMenus(menus) {
+      menus.forEach((menu) => {
+        const article = document.createElement("article");
+        article.className = "menu";
 
-          article.innerHTML = `
+        article.innerHTML = `
           <header class="header-menu">
             <img src="${menu.image}" alt="${menu.title}" />
           </header>
           <div class="title-menu">
             <h3 class="title-menu-title">${menu.title}</h3>
             <p class="title-menu-text">${menu.description}</p>
-            <span class="menu-price">IDR ${menu.price.toLocaleString("id-ID")}</span>
+            <span class="menu-price">${menu.price}</span>
             <footer class="menu-footer">
-              <a href="./pages/detailproduct.html">
+              <a href="./pages/detailproduct.html?id=${menu.id}">
                 <button class="menu-button">Buy</button>
-              </a>
-              <a class="icon-cart-shopping" href="./pages/histororder.html">
-                <img src="img/seconcard.png" alt="icon-cart-shopping" />
               </a>
             </footer>
           </div>
         `;
 
-          favoriteList.appendChild(article);
-        });
-      }
+        favoriteList.appendChild(article);
+      });
+    }
 
-      fetchData();
-    </script>
+    fetchData();
+</script>
+
   </body>
 </html>
