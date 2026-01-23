@@ -56,77 +56,145 @@
     </header>
 
     <main class="flex-1 py-10 px-36">
-        <h1 class="text-3xl font-normal mb-6">Profile</h1>
+      <h1 class="text-3xl font-normal mb-6">Profile</h1>
 
-        <div class="flex gap-8 items-start">
-            <aside class="bg-white p-6 rounded-lg shadow-md w-72 flex-shrink-0">
-                <div class="profile-info text-center">
-                    <h2 class="text-lg font-semibold">Aska Diliyan Perkasa</h2>
-                    <p class="text-gray-500 text-sm">askadiliyan@gmail.com</p>
-                    <img src="https://placehold.co/100x100" alt="Profile Photo" class="mx-auto rounded-full mb-4 mt-4">
-                </div>
-                <div class="flex flex-col gap-4 mt-6">
-                    <button class="w-full bg-coffee-orange text-white py-2 rounded bg-orange-500">Upload New Photo</button>
-                    <div class="text-gray-500 text-xs text-center">
-                        Since 20 January 2022
-                    </div>
-                </div>
-            </aside>
+      <div class="flex gap-8 items-start">
+        <aside class="bg-white p-6 rounded-lg shadow-md w-72 flex-shrink-0">
+          <div class="profile-info text-center">
+            <h2 class="text-lg font-semibold">Aska Diliyan Perkasa</h2>
+            <p class="text-gray-500 text-sm">askadiliyan@gmail.com</p>
+            <img
+              src="https://placehold.co/100x100"
+              alt="Profile Photo"
+              class="mx-auto rounded-full mb-4 mt-4"
+            />
+          </div>
+          <div class="flex flex-col gap-4 mt-6">
+            <button
+              class="w-full bg-coffee-orange text-white py-2 rounded bg-orange-500"
+            >
+              Upload New Photo
+            </button>
+            <div class="text-gray-500 text-xs text-center">
+              Since 20 January 2022
+            </div>
+          </div>
+        </aside>
 
-            <section class="bg-white p-8 rounded-lg shadow-md flex-1">
-                <form class="space-y-6">
+        <section class="bg-white p-8 rounded-lg shadow-md flex-1">
+          <form class="space-y-6">
+            <div>
+              <label
+                for="full-name"
+                class="block text-sm font-medium text-gray-600 mb-1"
+                >Full Name</label
+              >
+              <div
+                class="flex items-center border border-gray-300 rounded-md px-3 py-2"
+              >
+                <i class="fas fa-user text-gray-400 mr-2 text-sm"></i>
+                <input
+                  type="text"
+                  id="full-name"
+                  value=""
+                  class="flex-grow bg-transparent outline-none text-sm"
+                />
+              </div>
+            </div>
 
-                    <div>
-                        <label for="full-name" class="block text-sm font-medium text-gray-600 mb-1">Full Name</label>
-                        <div class="flex items-center border border-gray-300 rounded-md px-3 py-2">
-                            <i class="fas fa-user text-gray-400 mr-2 text-sm"></i>
-                            <input type="text" id="full-name" value="" class="flex-grow bg-transparent outline-none text-sm">
-                        </div>
-                    </div>
+            <div>
+              <label
+                for="email"
+                class="block text-sm font-medium text-gray-600 mb-1"
+                >Email</label
+              >
+              <div
+                class="flex items-center border border-gray-300 rounded-md px-3 py-2"
+              >
+                <i class="fas fa-envelope text-gray-400 mr-2 text-sm"></i>
+                <input
+                  type="email"
+                  id="email"
+                  value=""
+                  class="flex-grow bg-transparent outline-none text-sm"
+                />
+              </div>
+            </div>
 
-                    <div>
-                        <label for="email" class="block text-sm font-medium text-gray-600 mb-1">Email</label>
-                        <div class="flex items-center border border-gray-300 rounded-md px-3 py-2">
-                            <i class="fas fa-envelope text-gray-400 mr-2 text-sm"></i>
-                            <input type="email" id="email" value="" class="flex-grow bg-transparent outline-none text-sm">
-                        </div>
-                    </div>
+            <div>
+              <label
+                for="phone"
+                class="block text-sm font-medium text-gray-600 mb-1"
+                >Phone</label
+              >
+              <div
+                class="flex items-center border border-gray-300 rounded-md px-3 py-2"
+              >
+                <i class="fas fa-phone text-gray-400 mr-2 text-sm"></i>
+                <input
+                  type="text"
+                  id="phone"
+                  value=""
+                  class="flex-grow bg-transparent outline-none text-sm"
+                />
+              </div>
+            </div>
 
-                    <div>
-                        <label for="phone" class="block text-sm font-medium text-gray-600 mb-1">Phone</label>
-                        <div class="flex items-center border border-gray-300 rounded-md px-3 py-2">
-                            <i class="fas fa-phone text-gray-400 mr-2 text-sm"></i>
-                            <input type="text" id="phone" value="" class="flex-grow bg-transparent outline-none text-sm">
-                        </div>
-                    </div>
+            <div>
+              <label
+                for="password"
+                class="flex justify-between items-center text-sm font-medium text-gray-600 mb-1"
+              >
+                <span>Password</span>
+                <span class="text-coffee-orange text-xs cursor-pointer"
+                  >Set New Password</span
+                >
+              </label>
+              <div
+                class="flex items-center border border-gray-300 rounded-md px-3 py-2"
+              >
+                <i class="fas fa-lock text-gray-400 mr-2 text-sm"></i>
+                <input
+                  type="password"
+                  id="password"
+                  value=""
+                  class="flex-grow bg-transparent outline-none text-sm"
+                />
+                <i
+                  class="fas fa-eye-slash text-gray-400 ml-2 cursor-pointer toggle-password text-xs"
+                ></i>
+              </div>
+            </div>
 
-                    <div>
-                        <label for="password" class="flex justify-between items-center text-sm font-medium text-gray-600 mb-1">
-                            <span>Password</span>
-                            <span class="text-coffee-orange text-xs cursor-pointer">Set New Password</span>
-                        </label>
-                        <div class="flex items-center border border-gray-300 rounded-md px-3 py-2">
-                            <i class="fas fa-lock text-gray-400 mr-2 text-sm"></i>
-                            <input type="password" id="password" value="" class="flex-grow bg-transparent outline-none text-sm">
-                            <i class="fas fa-eye-slash text-gray-400 ml-2 cursor-pointer toggle-password text-xs"></i>
-                        </div>
-                    </div>
+            <div>
+              <label
+                for="address"
+                class="block text-sm font-medium text-gray-600 mb-1"
+                >Address</label
+              >
+              <div
+                class="flex items-center border border-gray-300 rounded-md px-3 py-2"
+              >
+                <i class="fas fa-map-marker-alt text-gray-400 mr-2 text-sm"></i>
+                <input
+                  type="text"
+                  id="address"
+                  value=""
+                  class="flex-grow bg-transparent outline-none text-sm"
+                />
+              </div>
+            </div>
 
-                    <div>
-                        <label for="address" class="block text-sm font-medium text-gray-600 mb-1">Address</label>
-                        <div class="flex items-center border border-gray-300 rounded-md px-3 py-2">
-                            <i class="fas fa-map-marker-alt text-gray-400 mr-2 text-sm"></i>
-                            <input type="text" id="address" value="" class="flex-grow bg-transparent outline-none text-sm">
-                        </div>
-                    </div>
-
-                    <button type="submit" class="w-full bg-coffee-orange text-white py-3 rounded-md bg-orange-500 font-semibold mt-8">Submit</button>
-                </form>
-            </section>
-        </div>
+            <button
+              type="submit"
+              class="w-full bg-coffee-orange text-white py-3 rounded-md bg-orange-500 font-semibold mt-8"
+            >
+              Submit
+            </button>
+          </form>
+        </section>
+      </div>
     </main>
-
-    
 
   </body>
 </html>
