@@ -202,6 +202,36 @@
       </div>
     </div>
 
-    
+    <script>
+      let selectedSize = "Regular";
+      let selectedTemp = "Ice";
+      let qty = 1;
+      let currentProduct = null;
+
+      async function loadProductDetail() {
+        const id = new URLSearchParams(window.location.search).get("id");
+
+        const res = await fetch(
+          "https://raw.githubusercontent.com/askadiliya/koda-b6-html/refs/heads/main/data/data.json",
+        );
+        const data = await res.json();
+
+        currentProduct = data.flashSaleProducts.find((p) => p.id == id);
+
+        if (!currentProduct) return;
+
+        document.getElementById("productImage").src = currentProduct.image;
+        document.getElementById("productTitle").innerText =
+          currentProduct.title;
+        document.getElementById("productPrice").innerText =
+          currentProduct.price;
+        document.getElementById("productDescription").innerText =
+          currentProduct.description;
+      }
+
+      
+
+      loadProductDetail();
+    </script>
   </body>
 </html>
