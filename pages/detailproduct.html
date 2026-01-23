@@ -250,6 +250,19 @@
         };
       });
 
+      document.querySelectorAll(".temp-btn").forEach((btn) => {
+        btn.onclick = () => {
+          document.querySelectorAll(".temp-btn").forEach((b) => {
+            b.classList.remove("border-orange-custom", "text-orange-custom");
+            b.classList.add("border-gray-300", "text-gray-500");
+          });
+          btn.classList.add("border-orange-custom", "text-orange-custom");
+          selectedTemp = btn.dataset.temp;
+        };
+      });
+
+      
+
       
       loadProductDetail();
     </script>
