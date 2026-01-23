@@ -239,8 +239,18 @@
         document.getElementById("qtyInput").value = qty;
       };
 
-      
+      document.querySelectorAll(".size-btn").forEach((btn) => {
+        btn.onclick = () => {
+          document.querySelectorAll(".size-btn").forEach((b) => {
+            b.classList.remove("border-orange-custom", "text-orange-custom");
+            b.classList.add("border-gray-300", "text-gray-500");
+          });
+          btn.classList.add("border-orange-custom", "text-orange-custom");
+          selectedSize = btn.dataset.size;
+        };
+      });
 
+      
       loadProductDetail();
     </script>
   </body>
