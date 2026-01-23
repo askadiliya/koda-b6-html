@@ -261,8 +261,29 @@
         };
       });
 
-      
+      function buildOrderData() {
+        return {
+          id: currentProduct.id,
+          title: currentProduct.title,
+          image: currentProduct.image,
+          price: currentProduct.price,
+          qty,
+          size: selectedSize,
+          temperature: selectedTemp,
+        };
+      }
 
+      document.getElementById("buyNow").onclick = () => {
+        localStorage.setItem("payment", JSON.stringify(buildOrderData()));
+        window.location.href = "payment.html";
+      };
+
+      document.getElementById("addToCart").onclick = () => {
+        const cart = JSON.parse(localStorage.getItem("cart")) || [];
+        cart.push(buildOrderData());
+        localStorage.setItem("cart", JSON.stringify(cart));
+        window.location.href = "history.html";
+      };
       
       loadProductDetail();
     </script>
