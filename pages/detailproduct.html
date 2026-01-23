@@ -229,6 +229,16 @@
           currentProduct.description;
       }
 
+      document.getElementById("plusQty").onclick = () => {
+        qty++;
+        document.getElementById("qtyInput").value = qty;
+      };
+
+      document.getElementById("minusQty").onclick = () => {
+        if (qty > 1) qty--;
+        document.getElementById("qtyInput").value = qty;
+      };
+
       
 
       loadProductDetail();
