@@ -333,7 +333,7 @@ section.container-favorite, .visit-store {
   margin: 25px auto;
 }
 
-.container-favorite, .visit-store > p {
+.container-favorite > p {
   font-weight: 400;
   font-size: 16px;
   color: #4f5665;
