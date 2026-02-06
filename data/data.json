@@ -2,7 +2,7 @@
   "flashSaleProducts": [
     {
       "id": 1,
-      "title": "Hazelnut Latte",
+      "title": "Hazelnut",
       "description": "You can explore the menu that we provide with fun and have their own taste and make your day better.",
       "price": 10000,
       "oldPrice": 20000,
@@ -22,7 +22,7 @@
     },
     {
       "id": 3,
-      "title": "Chocolate Latte",
+      "title": "Icecream",
       "description": "Rich chocolate flavor combined with premium coffee beans.",
       "price": 15000,
       "oldPrice": 30000,
@@ -32,7 +32,7 @@
     },
     {
       "id": 4,
-      "title": "Vanilla Latte",
+      "title": "Chicken",
       "description": "Smooth vanilla taste with creamy milk and espresso.",
       "price": 13000,
       "oldPrice": 26000,
